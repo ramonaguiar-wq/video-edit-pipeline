@@ -4,6 +4,8 @@ A plan-driven pipeline that turns raw clips into a fast preview and a Premiere-r
 
 Built for a personal video project. I edit episodes and reels from hours of raw footage, and I wanted the repetitive decisions to live in a file I can diff, not in a timeline I can't.
 
+![Edit the plan, not the timeline](docs/cover.png)
+
 ![Contact sheet from the demo preview](docs/contact-sheet.jpg)
 
 *Preview frames from the bundled demo: title, captions from word-level transcription, and a cutaway anchored to the word "pauses". All material is synthetic.*
@@ -11,9 +13,13 @@ Built for a personal video project. I edit episodes and reels from hours of raw 
 ## How it works
 
 ```
- raw clips ──► plan (JSON) ──► montar.py ──► timeline ──► preview.py ──► you approve ──► xml_premiere.py
-                 you edit      silence cuts,   resolved     fast mp4 +                    Final Cut XML + SRT
-                 this only     word anchors    seconds      frame sheet                   for Premiere
+ raw clips --> plan (JSON) --> montar.py --> timeline
+               you edit this   silence cuts,  resolved
+               only            word anchors   seconds
+
+ timeline --> preview.py --> you approve --> xml_premiere.py
+              fast mp4 +                     Final Cut XML + SRT
+              frame sheet                    for Premiere
 ```
 
 - **The plan is the single source of truth.** Each block lists `falas` (clip, in, out), `cobertura` (cutaways), `textos` (titles, lower thirds) and options. I never edit the generated timeline; I change the plan and regenerate.
