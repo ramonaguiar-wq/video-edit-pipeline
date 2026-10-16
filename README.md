@@ -71,6 +71,12 @@ Other plan fields: `zooms` (punch-in on a source window), `espelhar` (flip clips
 - Vertical sequences scale to fill the height. A horizontal clip in a vertical sequence is rotated, not letterboxed, unless you choose `encaixar_com_fundo` (blurred background).
 - Unknown config keys print a warning instead of being silently ignored.
 
+## Companion bot
+
+**EdiTube** is a Grok Bot template for the same workflow: it transcribes raw footage, summarizes clips with timecodes, and turns an approved script into a cut plan and Premiere XML. It plans; this repo is what renders.
+
+[Add EdiTube to Grok Bot](https://x.ai/bot/HS_Tq2uq4RCx1_VpN-LLY)
+
 ## Layout
 
 | Path | Role |
