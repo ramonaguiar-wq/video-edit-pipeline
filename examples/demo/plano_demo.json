@@ -1,0 +1,16 @@
+{
+  "perfil": "shorts",
+  "formato": "16:9",
+  "config": {"whisper_modelo": "base", "whisper_device": "cpu"},
+  "blocos": [
+    {
+      "nome": "demo",
+      "falas": [{"clipe": "fala", "in": 0.0, "out": 16.5, "idioma": "en"}],
+      "cobertura": [{"clipe": "paisagem", "in": 1.0, "na_palavra": "pauses", "dur": 2.5, "som": 0.0}],
+      "textos": [
+        {"estilo": "titulo", "texto": "PIPELINE\nDEMO", "lado": "direita", "em": 0.3, "dur": 2.5},
+        {"estilo": "arroba", "texto": "@yourhandle", "em": 4.0, "dur": 3.2}
+      ]
+    }
+  ]
+}
