@@ -1,0 +1,23 @@
+<!doctype html><meta charset=utf-8><link rel=stylesheet href=base.css>
+<style>
+h1{font-size:70px;margin-top:26px;width:1300px}
+.lbl{font-family:Menlo,monospace;font-size:20px;color:var(--mute);margin:0 0 12px}
+.bar{height:92px;border-radius:3px;position:relative;display:flex}
+.raw{background:var(--rule);width:1408px}
+.cut{width:826px;gap:6px;background:none}
+.cut i{background:var(--ink);height:100%;display:block;border-radius:2px}
+.val{position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:40px;font-weight:700}
+.cut .val{right:auto;left:840px;white-space:nowrap}
+.blk{position:absolute;left:96px;top:330px;width:1408px}
+.blk+.blk{top:530px}
+.cap{position:absolute;left:96px;top:735px;font-size:26px;line-height:1.4;color:#3a352d;width:1100px}
+.cap b{color:var(--acc)}
+</style>
+<div class=wrap>
+<div class=eyebrow><b>02</b> · What the demo run did</div>
+<h1>16.5 seconds of padded speech became 9.7.</h1>
+<div class=blk><div class=lbl>RAW CLIP</div><div class="bar raw"><span class=val>16.5 s</span></div></div>
+<div class=blk><div class=lbl>AFTER SILENCE TRIM · 5 CUTS · 6 CAPTIONS</div><div class="bar cut"><i style="flex:1.64"></i><i style="flex:2.08"></i><i style="flex:2.14"></i><i style="flex:1.66"></i><i style="flex:2.2"></i><span class=val>9.7 s</span></div></div>
+<p class=cap>Synthetic test footage: a generated voice with long pauses. It proves the mechanics, not a time saving on real episodes. <b>The XML validates with xmllint.</b></p>
+</div>
+<div class=foot><span>Video edit pipeline</span><span>3 / 5</span></div>

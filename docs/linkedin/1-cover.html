@@ -1,0 +1,25 @@
+<!doctype html><meta charset=utf-8><link rel=stylesheet href=base.css>
+<style>
+h1{font-size:92px;margin-top:34px;width:760px}
+h1 em{font-style:italic;color:var(--acc)}
+.sub{font-size:30px;line-height:1.35;color:#3a352d;width:700px;margin-top:38px}
+.card{position:absolute;right:96px;top:150px;width:640px;background:var(--ink);color:#EDE6D6;border-radius:6px;padding:34px 38px;font-family:Menlo,monospace;font-size:23px;line-height:1.62}
+.card .cap{color:#9a9384;font-size:17px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;display:flex;justify-content:space-between}
+.k{color:#9a9384}.s{color:#E9B872}.hl{background:var(--acc);color:#fff;padding:2px 6px;border-radius:3px}
+.note{position:absolute;right:96px;top:690px;width:640px;font-size:23px;line-height:1.4;color:var(--mute);font-style:italic}
+</style>
+<div class=wrap>
+<div class=eyebrow><b>Case study</b> · Video edit pipeline</div>
+<h1>Edit the plan,<br>not the <em>timeline.</em></h1>
+<p class=sub>Raw clips go in. A fast preview and a Premiere-ready XML come out. Every editing decision lives in one file I can read and diff.</p>
+<div class="card"><div class=cap><span>plano_demo.json</span><span>the only file I edit</span></div>
+<span class=k>"falas":</span> [{<span class=k>"clipe":</span> <span class=s>"fala"</span>,<br>
+&nbsp;&nbsp;<span class=k>"in":</span> 0.0, <span class=k>"out":</span> 16.5}],<br>
+<span class=k>"cobertura":</span> [{<span class=k>"clipe":</span> <span class=s>"paisagem"</span>,<br>
+&nbsp;&nbsp;<span class=hl>"na_palavra": "pauses"</span>,<br>
+&nbsp;&nbsp;<span class=k>"dur":</span> 2.5}],<br>
+<span class=k>"textos":</span> [{<span class=k>"estilo":</span> <span class=s>"titulo"</span>,<br>
+&nbsp;&nbsp;<span class=k>"texto":</span> <span class=s>"PIPELINE\nDEMO"</span>}]</div>
+<p class=note>A cutaway placed on a spoken word, not on a guessed second.</p>
+</div>
+<div class=foot><span>Whisper · ffmpeg · Python</span><span>github.com/ramonaguiar-wq/video-edit-pipeline</span></div>

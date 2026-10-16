@@ -1,0 +1,28 @@
+<!doctype html><meta charset=utf-8><link rel=stylesheet href=base.css>
+<style>
+h1{font-size:70px;margin-top:26px;width:1200px}
+.row{position:absolute;left:96px;right:96px;top:360px;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.st{padding:0 26px 0 0;border-top:3px solid var(--ink);padding-top:22px;position:relative}
+.st.you{border-top-color:var(--acc)}
+.n{font-family:Menlo,monospace;font-size:20px;color:var(--mute)}
+.st.you .n{color:var(--acc);font-weight:700}
+.t{font-size:38px;font-weight:700;margin:12px 0 12px;letter-spacing:-.01em}
+.d{font-size:24px;line-height:1.38;color:#3a352d}
+.f{font-family:Menlo,monospace;font-size:19px;color:var(--mute);margin-top:16px}
+.band{position:absolute;left:96px;right:96px;top:690px;font-size:24px;line-height:1.4;color:#3a352d;display:flex;gap:56px}
+.band div{flex:1;background:var(--card);padding:22px 28px;border-radius:4px}
+.band b{display:block;font-family:Menlo,monospace;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
+</style>
+<div class=wrap>
+<div class=eyebrow><b>01</b> · How it works</div>
+<h1>One human gate between the plan and the XML.</h1>
+<div class=row>
+<div class="st you"><div class=n>YOU</div><div class=t>Plan</div><div class=d>A JSON file: clips, in and out points, cutaways, titles.</div><div class=f>plano.json</div></div>
+<div class=st><div class=n>02</div><div class=t>Timeline</div><div class=d>Cuts silences from word timestamps. Anchors items to words.</div><div class=f>montar.py</div></div>
+<div class=st><div class=n>03</div><div class=t>Preview</div><div class=d>A quick MP4 and a frame sheet, rendered in seconds.</div><div class=f>preview.py</div></div>
+<div class="st you"><div class=n>YOU</div><div class=t>Approve</div><div class=d>Look. If it is wrong, change the plan and run again.</div><div class=f>no XML yet</div></div>
+<div class=st><div class=n>05</div><div class=t>Premiere</div><div class=d>Final Cut XML and an SRT. Grading and polish happen here.</div><div class=f>xml_premiere.py</div></div>
+</div>
+<div class=band><div><b>Why a plan</b>A file can be diffed, reviewed and rerun. A timeline cannot.</div><div><b>Why preview first</b>The preview takes seconds. The XML takes minutes.</div></div>
+</div>
+<div class=foot><span>Video edit pipeline</span><span>2 / 5</span></div>

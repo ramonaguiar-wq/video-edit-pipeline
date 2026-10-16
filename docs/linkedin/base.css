@@ -1,0 +1,10 @@
+:root{--paper:#F4EFE6;--ink:#16130F;--mute:#6B655B;--rule:#D8D0C2;--card:#EBE4D6;--acc:#D9421C}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:900px;background:var(--paper);color:var(--ink);overflow:hidden}
+body{font-family:"Iowan Old Style","Charter",Georgia,serif;position:relative}
+.mono{font-family:Menlo,"Courier New",monospace}
+.eyebrow{font-family:Menlo,monospace;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.eyebrow b{color:var(--acc);font-weight:700}
+.foot{position:absolute;left:96px;right:96px;bottom:56px;display:flex;justify-content:space-between;font-family:Menlo,monospace;font-size:19px;color:var(--mute);border-top:1px solid var(--rule);padding-top:20px}
+.wrap{position:absolute;inset:0;padding:84px 96px}
+h1{font-weight:700;letter-spacing:-.02em;line-height:1.02}
